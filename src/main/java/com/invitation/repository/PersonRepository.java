@@ -1,0 +1,13 @@
+package com.invitation.repository;
+
+import com.invitation.model.Person;
+import org.springframework.data.repository.CrudRepository;
+
+public interface PersonRepository extends CrudRepository<Person, Integer> {
+    @Override
+    public Person save(Person person);
+}
+
+
+
+
